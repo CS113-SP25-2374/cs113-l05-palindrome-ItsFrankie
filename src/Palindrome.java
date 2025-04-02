@@ -1,4 +1,7 @@
-public class Palindrome {
+import java.util.Stack;
+
+public class Palindrome<E> 
+{
     /**
      * Break a stack into two, push the first half to one stack, then push
      * second half to a stack, then pop & push to a second stack.
@@ -31,7 +34,7 @@ public class Palindrome {
         Character char0;
         int whiteSpaceCount = 0;
 
-        Stack<Character> stack1 = new Stack<Character>();
+        ArrayStack<Character> stack1 = new ArrayStack<Character>();
         for(int i = 0; i < word0.length(); i++)
         { //fill stack1
             char0 = word0.charAt(i);

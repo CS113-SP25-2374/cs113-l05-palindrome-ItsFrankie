@@ -16,6 +16,7 @@ public class Main
             System.out.println("\nEnter another word or phrase. (Enter \"0\" to exit)");
             word = keyboard.nextLine();
         }
+        keyboard.close();
     }
 }
 

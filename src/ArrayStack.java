@@ -4,6 +4,11 @@ public class ArrayStack<E> implements StackInterface<E>
     int first;
     int last;
     int count;
+
+    public ArrayStack() 
+    {
+        resize(10);
+    }
     
     private void resize(int newSize) //ArrayDeque (1)
     {
